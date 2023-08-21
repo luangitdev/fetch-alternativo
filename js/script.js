@@ -19,12 +19,12 @@ function changeToLoadingState(){
 function renderPost(post){
     return `
         <form> 
-            <label> <spam>ID:</spam> </label> 
+            <label><span> ID: </span></label> 
             <label>${post.id}</label><br>
-            <label> <spam>Título:</spam> </label> 
+            <label><span> Título: </span></label> 
             <label>${post.title}</label><br>
-            <label> <spam>Decrição:</spam> </label> 
-            <label>${post.body}</label><br>
+            <label><span> Decrição: </span></label> 
+            <label>${post.body}</label><br><br>
         </form>
     `;
 }
