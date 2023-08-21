@@ -8,11 +8,24 @@ function changeToLoadingState(){
     document.getElementById("posts").innerHTML = "Carregando....";
 }
 
+// function renderPost(post){
+//     return `
+//         <h3>${post.title}</h3>
+//         ${post.body}<br/>
+//         <hr/>
+//     `;
+// }
+
 function renderPost(post){
     return `
-        <h3>${post.title}</h3>
-        ${post.body}<br/>
-        <hr/>
+        <form> 
+            <label> ID: </label> 
+            <label>${post.id}</label><br>
+            <label> Título: </label> 
+            <label>${post.title}</label><br>
+            <label> Decrição: </label> 
+            <label>${post.body}</label><br>
+        </form>
     `;
 }
 
